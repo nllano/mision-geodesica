@@ -1,22 +1,23 @@
 var config = {
-    style: 'map/style.json',
-    showMarkers: true,
+    style: 'https://tiles.openfreemap.org/styles/liberty',
+    showMarkers: false,
     markerColor: '#3FB1CE',
-    inset: true, // if inset map is set to true, legend will be disabled.
-    legend: false, // if legend is set to true, inset will be disabled.
+    inset: true,
+    legend: false,
     theme: 'dark',
-    use3dTerrain: false, //set true for enabling 3D maps. You will need to provide your own terrain tiles.
-    useCustomLayers: false, //set true for enabling custom layers from sources.js
-    bookmarks: true,
-    chapterReturn: true,
-    title: 'The Title Text of this Story',
+    use3dTerrain: false,
+    useCustomLayers: true,
+    bookmarks: false,
+    chapterReturn: false,
+    title: 'Medir la Tierra',
     logo: '',
-    subtitle: 'A descriptive and interesting subtitle to draw in the reader',
-    byline: 'By a Digital Storyteller',
-    mobileview: '<div id="rotate-mobile"><em>For optimal viewing of this storytelling map on mobile, rotate your device to a horizontal orientation.</em><br><br><img src="images/device.png">', // to add custom messaging in the header for mobile devices
-    footer: 'Source: source citations, etc.<br> Created using <a href="https://github.com/digidem/maplibre-storymap" target="_blank">MapLibre Storytelling</a> template.',
+    subtitle: 'La Misión Geodésica Francesa al Ecuador (1736–1743)',
+    byline: 'Por Felipe Valdez',
+    footer: 'Fuentes: La Condamine (1745, 1751), Gallica BnF; Juan y Ulloa (1748), BNE. Creado con la plantilla <a href="https://github.com/digidem/maplibre-storymap" target="_blank">MapLibre Storytelling</a> y datos de <a href="https://openfreemap.org" target="_blank">OpenFreeMap</a>.',
     chapters: [
-        {
+        // aquí irán los capítulos
+    ]
+};
             id: 'slug-style-id',
             alignment: 'left',
             hidden: false,
