@@ -15,7 +15,27 @@ var config = {
     byline: 'Por Felipe Valdez',
     footer: 'Fuentes: La Condamine (1745, 1751), Gallica BnF; Juan y Ulloa (1748), BNE. Creado con la plantilla <a href="https://github.com/digidem/maplibre-storymap" target="_blank">MapLibre Storytelling</a> y datos de <a href="https://openfreemap.org" target="_blank">OpenFreeMap</a>.',
     chapters: [
-        // aquí irán los capítulos
+        {
+            id: 'cap-0-apertura',
+            alignment: 'left',
+            hidden: false,
+            title: '¿Qué forma tiene la Tierra?',
+            image: './images/cap0_esferoide_newton.jpg',
+            caption: 'Comparación de los dos modelos del esferoide terrestre, siglo XVIII. Dominio público.',
+            description: 'En 1734, la Academia Real de Ciencias de París enfrentaba una disputa que dividía a la ciencia europea: ¿es la Tierra un esferoide achatado en los polos, como sostenía Isaac Newton, o achatado en el ecuador, como defendía la escuela de Jacques Cassini? La única forma de resolverlo era medir. La Academia decidió enviar dos expediciones simultáneas a los extremos del planeta: una a Laponia, dirigida por Maupertuis (1736–1737), y otra al territorio de la Real Audiencia de Quito, en el actual Ecuador.',
+            location: {
+                center: [0.0, 0.0],
+                zoom: 1.6,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'jumpTo',
+            rotateAnimation: false,
+            mapInteractive: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        }
     ]
 };
             id: 'slug-style-id',
